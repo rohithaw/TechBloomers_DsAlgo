@@ -3,37 +3,43 @@ package StepDefinition;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.io.IOException;
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import Driver.Driver_Factory;
+import context.Textcontext;
 import io.cucumber.java.en.*;
 import pageObjects.dsAlgoHomePage;
 import pageObjects.dsAlgoLoginPage;
+import utilities.CommonMethods;
 import utilities.ConfigReader;
+import utilities.Loggerload;
+import utilities.PropertiesFile;
 
 public class HomePageStepDef {
 	
-	//dsAlgoHomePage hp;
+	dsAlgoHomePage hp;
+	WebDriver driver;
+	Textcontext textContext;
 	
-	private dsAlgoHomePage hp = new dsAlgoHomePage(Driver_Factory.getDriver());
+	//private dsAlgoHomePage hp = new dsAlgoHomePage(Driver_Factory.getDriver());
+	
+	public HomePageStepDef(Textcontext textContext) { 
+		this.textContext = textContext;
+		this.driver = textContext.getDriver();
+		this.hp = textContext.getHp();
+	}
 	
 	
 	@Given("User enters homepage url")
 	public void user_enters_homepage_url() {
-		
-//		String url = ConfigReader.init_prop("HomePageUrl");
-//		driver.get(url);
-//		
-//		System.setProperty("webdriver.chrome.driver","/Users/ark/Downloads/chromedriver");
-//		ChromeOptions opt =new ChromeOptions();
-//		opt.addArguments("--remote-allow-origins=*");
-//		WebDriver driver=new ChromeDriver(opt);
-		//driver.get("https://dsportalapp.herokuapp.com/");
-     	//driver.get("https://dsportalapp.herokuapp.com/");
-//		driver.manage().window().maximize();
-//	   
+	  
+		String url = PropertiesFile.readPropertiesFile("MainPageUrl");
+		driver.get(url);
 	}
 
 	@Then("User should be able to navigate to the home page and see the text - Preparing for the Interviews You are at the right place")
@@ -41,6 +47,7 @@ public class HomePageStepDef {
 	   
 		String homeText=hp.homePageText.getText();
 		assertEquals("Preparing for the Interviews", homeText); 
+		Loggerload.info("******************* Launching Home Page******************");
 		
 	}
 
@@ -59,80 +66,111 @@ public class HomePageStepDef {
 
 	@Then("Home Page is displayed with the all the seven datastructure modules")
 	public void home_page_is_displayed_with_the_all_the_seven_datastructure_modules() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
+		List<String> moduleNames = CommonMethods.printTextForWebElements(hp.dsModuleTitles);
+		System.out.println(moduleNames);
+		assertEquals(7, moduleNames.size());
 	}
 
 	@Then("User should be able to see the Register link")
 	public void user_should_be_able_to_see_the_register_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
+		assertTrue(hp.registerLink.isDisplayed());
 	}
 
 	@Then("User should be able to see the Sign in link")
 	public void user_should_be_able_to_see_the_sign_in_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
+		assertTrue(hp.SigninPageText.isDisplayed());
 	}
 
-	@Then("User should be able to see the datastructures dropdown")
+	@Then("User should be able to see the datastructures dropdown with all six modules")
 	public void user_should_be_able_to_see_the_datastructures_dropdown() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
+		assertTrue(hp.dsDropDown.isDisplayed());
+		List<String> options = CommonMethods.printTextForWebElements(hp.dsDropDownOptions);
+		System.out.println(options);
+		assertEquals(6, options.size());
 	}
 
 	@When("The user clicks on Get Started link on homepage {string} without login")
-	public void the_user_clicks_on_get_started_link_on_homepage_without_login(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	public void the_user_clicks_on_get_started_link_on_homepage_without_login(String option) {
+		
+		//Driver_Factory.getDriver().get("https://dsportalapp.herokuapp.com/home");
+		String url1 = PropertiesFile.readPropertiesFile("HomePageUrl");
+		driver.get(url1);
+	   	hp.Getstart_click(option);
+		
 	}
 
 	@Then("The user get warning message {string}")
-	public void the_user_get_warning_message(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	public void the_user_get_warning_message(String Message) throws IOException {
+	    
+	     hp.warning_mess(Message);
+	     Loggerload.warn("******************You have got a login failure warning*********************");
 	}
 
 	@When("The user clicks on dropdown {string} without login")
 	public void the_user_clicks_on_dropdown_without_login(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	  
+		//Driver_Factory.getDriver().get("https://dsportalapp.herokuapp.com/home");
+		String url1 = PropertiesFile.readPropertiesFile("HomePageUrl");
+		driver.get(url1);
+		hp.droplist(string);
 	}
 
 	@Then("The user get warning message again {string}")
-	public void the_user_get_warning_message_again(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	public void the_user_get_warning_message_again(String Message) throws IOException {
+		
+		 hp.warning_mess(Message);
+	     Loggerload.warn("******************You have got a login failure warning*********************");
+	   
+		
 	}
 
 	@When("User clicks on the Sign in link")
 	public void user_clicks_on_the_sign_in_link() {
 	   
 		hp.signinClick();
+		Loggerload.info("*************Launching Signin Page*******************");
 	}
 
 	@Then("User gets redirected to the Sign in page and see the username field and password field")
 	public void user_gets_redirected_to_the_sign_in_page_and_see_the_username_field_and_password_field() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	   
+		if(hp.username.isDisplayed()&& hp.password.isDisplayed()) {
+			assertTrue(true);
+		}
+		else {
+			assertTrue(false);
+
+		}
+		
 	}
 
 	@Then("User should be able to see the message - If you don't have an account, please Register!")
 	public void user_should_be_able_to_see_the_message_if_you_don_t_have_an_account_please_register() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+		
+//		String Actualmsg=hp.pleaseRegisterMessageLink.getText();
+//		System.out.println(Actualmsg);
+//		String ExpectedMsg="Register!";
+//		assertEquals(ExpectedMsg,Actualmsg );
+		
+		assertEquals("Register!", hp.pleaseRegisterMessageLink.getText());
+	   
 	}
 
 	@When("User clicks on the Register Link")
 	public void user_clicks_on_the_register_link() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    
+		hp.registerLink.click();
+		Loggerload.info("*************Launching Register Page*******************");
 	}
 
 	@Then("User is redirected on the Register Page and should be able to see the Register button")
 	public void user_is_redirected_on_the_register_page_and_should_be_able_to_see_the_register_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	   
+		assertTrue(hp.registerButton.isDisplayed());
 	}
 
 }

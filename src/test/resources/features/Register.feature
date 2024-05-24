@@ -3,9 +3,9 @@
 Feature: Register Page Feature
 
 Background: User launch home page of an dsalgo project
-Given user opens DS Algo portal link
-When user clicks the Get Started button
-Then user Clicks Register Link
+Given User enters homepage url
+When User Clicks on Get Started button
+Then User clicks on the Register Link
 
 @RP1
 Scenario: User clicks Register button with all fields empty
@@ -26,15 +26,14 @@ Then It should display an error Please fill out this field. below Username textb
 
 @RP4
 Scenario Outline: Register with different input combinations.
-When The user enters <username> , <password> , <confirm-password>
-And User clicks on Register button
-Then It should display a message: <status>
-
-    Examples: 
+When user enters username password confirm-password and click Register with below status message
+ 
       | username   | password  | confirm-password | status                                                  |
       | hw9%j      | Bq6n34rt  | Bq6n34rt         | Please enter a valid username.                          |
       | Rohitha    | Bq6n34@.+ | dummy.@          | password_mismatch:The two password fields didn’t match. |
       | Rohitha    | Bq6n      | Bq6n             | Password must contain at least eight characters.        |
       | Rohitha    | Rohitha   | Rohitha          | Password can not be too similar to your username.       |
       | Rohitha    |  12345678 | 12345678         | Password can not be entirely numeric.                   |
-      | Rohitha    | Win24@May | Win24@May        | New Account Created. You are logged in as username.     |
+      | ninja2026  | Tech@2024 | Tech@2024        | New Account Created. You are logged in as username.     |
+      
+ 
