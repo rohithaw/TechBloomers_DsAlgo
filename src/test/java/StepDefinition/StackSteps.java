@@ -1,7 +1,6 @@
 package StepDefinition;
 
 import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -13,6 +12,7 @@ import pageObjects.StackPage;
 import pageObjects.dsAlgoHomePage;
 import pageObjects.dsAlgoLoginPage;
 import utilities.ExcelReader;
+import utilities.Loggerload;
 
 public class StackSteps {
 	
@@ -51,19 +51,17 @@ public class StackSteps {
 
 	@Then("user navigates to the blank page on Stack Page")
 	public void user_navigates_to_the_blank_page_on_stack_page() {
-	    
+	    sp.pagedisp();
 	}
-
 		
 	@When("User clicks on {string} link in Stack Page")
 	public void user_clicks_on_link_in_stack_page(String string) {
 		sp.stacklinkselect(string);
 	}
 	
-	
 	@Then("user should be redirected to that {string} page in Stack Page")
 	public void user_should_be_redirected_to_that_page_in_stack_page(String string) {
-//		sp.stacklinktextdisplay(string);
+		sp.stacklinktextdisplay(string);
 	}
 	
 	@Then("User clicks on Try here button in Stack Page")
@@ -86,18 +84,14 @@ public class StackSteps {
 		ExcelReader reader=new ExcelReader();
 		List<Map<String,String>> testData=reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx", Sheetname);
 		String code1=testData.get(RowNumber).get("StackpythonCode");
-		System.out.println(code1);
+		Loggerload.info("validcode entered into tryEditor : "+ code1);
 		sp.Stack_valid_python_code(code1);
-		//Actions action=new Actions(driver);
-	    //action.moveToElement(ap.CodeTxtEditor1).doubleClick().click().sendKeys(code1).build().perform();
-		
+				
 	}
 
 	@Then("The user clicks on run button in Stack Page")
 	public void the_user_clicks_on_run_button_in_stack_page(){
-     	//ap.Runbtn.click();
-		//Thread.sleep(1000);
-	sp.run_bttn_click();
+       sp.run_bttn_click();
 		
 	}
 
@@ -113,7 +107,7 @@ public class StackSteps {
 		ExcelReader reader=new ExcelReader();
 		List<Map<String,String>> testData=reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx", Sheetname);
 		String code1=testData.get(RowNumber).get("StackpythonCode");
-		System.out.println(code1);
+		Loggerload.info("invalidcode entered into tryEditor : "+ code1);
 		sp.Stack_invalid_python_code(code1);
 	}
 
@@ -124,11 +118,9 @@ public class StackSteps {
 
 	@Then("User should be presented with Error popup in Stack Page")
 	public void user_should_be_presented_with_error_popup_in_stack_page() {
-	    
+	    sp.acceptBrowserAlert();
 	}
 	
-
-		
 	}
 
 

@@ -1,22 +1,18 @@
 package StepDefinition;
 
 import static org.testng.Assert.assertEquals;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
-
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-//import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome.ChromeDriver;
 import Driver.Driver_Factory;
 import io.cucumber.java.en.*;
 import pageObjects.GraphPage;
 import pageObjects.dsAlgoHomePage;
 import pageObjects.dsAlgoLoginPage;
 import utilities.ExcelReader;
+import utilities.Loggerload;
 
 
 public class GraphSteps {
@@ -29,7 +25,6 @@ public class GraphSteps {
 	
 	@Given("User is Signed-in")
 	public void user_is_signed_in() {
-	    
 	}
 	
 	@When("Clicks on the Get Started button for Graph Datastructures")
@@ -60,23 +55,22 @@ public class GraphSteps {
 
 	@Then("user navigates to the blank page on Graph Page")
 	public void user_navigates_to_the_blank_page_on_graph_page() {
-	    
+	    gp.pagedisp();
 	}
 
 	@Given("User clicks on {string} link in Graph Page")
 	public void user_clicks_on_link_graph_page(String string) {
-		
 		gp.graphlinkselect(string);
 	}
 	
 	@Then("user should be redirected to that {string} link in Graph Page")
 	public void user_should_be_redirected_to_that_particular_page(String string) {
-//		gp.graphlinktextdisplay(string);
+		gp.graphlinktextdisplay(string);
 	}
 	
 	@Given("User clicks on Try here button in Graph Page")
 	public void user_clicks_on_try_here_button() {
-//		gp.displayTryherebtn();
+		gp.displayTryherebtn();
 		gp.clkTryHerebtn();
 		}
 	
@@ -91,11 +85,9 @@ public class GraphSteps {
 		ExcelReader reader=new ExcelReader();
 		List<Map<String,String>> testData=reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx", Sheetname);
 		String code1=testData.get(RowNumber).get("GraphpythonCode");
-		System.out.println(code1);
+		Loggerload.info("validcode entered into tryEditor : "+ code1);
 		gp.Graph_valid_python_code(code1);
-		//Actions action=new Actions(driver);
-	    //action.moveToElement(ap.CodeTxtEditor1).doubleClick().click().sendKeys(code1).build().perform();
-	
+			
 }
 	@Then("The user clicks on run button in Graph Page")
 	public void the_user_clicks_on_run_button_in_graph_page() {
@@ -113,7 +105,7 @@ public class GraphSteps {
 		ExcelReader reader=new ExcelReader();
 		List<Map<String,String>> testData=reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx", Sheetname);
 		String code1=testData.get(RowNumber).get("GraphpythonCode");
-		System.out.println(code1);
+		Loggerload.info("invalidcode entered into tryEditor : "+ code1);
 		gp.Graph_invalid_python_code(code1);
 	}
 
@@ -124,19 +116,10 @@ public class GraphSteps {
 
 	@Then("User should be presented with Error popup in Graph Page")
 	public void user_should_be_presented_with_error_popup_in_graph_page() {
-	    
+	    gp.acceptBrowserAlert();
 	}
 	
-	@When("user clicks on the Practice Questions")
-	public void user_clicks_on_the_practice_questions() {
-	    
 	}
-
-	@Then("user navigates to the blank page")
-	public void user_navigates_to_the_blank_page() {
-	    
-	}
-}
 
 
 	
