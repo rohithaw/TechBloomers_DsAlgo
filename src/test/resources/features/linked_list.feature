@@ -2,38 +2,71 @@
 Feature: LinkedList feature
   I want to use this template for my feature file
 
-  Background: User is on the Home page
-   Given User clicks the Get Started button in <Linked List> pane or select <Linked List> from the drop down menu
-   Then User should be able to see <Linked List> page
+ Background:
+   Given User enters homepage url
+   When  User Clicks on Get Started button
+   And   User clicks on the Sign in link
+   And   Clicks on Login
+   Then  User clicks on the Get Started button in Linked list pane 
   
 
-  @tag1
-  Scenario Outline: Linked List scenario
-    Given User is on the Linked List page
-    And   User is able to see <name> links on Linked List page 
-    And   User clicks on <name> links button on Linked List page 
-    When  User is redirected <name> link page 
-    And   User able to see Try Here button on the <name> link page
-    And   User clicks on Try Here button
-    And   User is redirected to Try Editor page 
-    And   User is able to see a Run button to test 
-    Then  User validates Try Here button with valid input
-    And   User Validates Try Here button with invalid input 
-  
+  @L1
+   Scenario: Linked list Page scenario
+    When    User selects Linked list from the drop down menu
+    Then    User is navigated to the Linked list page 
+    And     User clicks on Introduction link on Linked list page  
+   Then     User clicks on the practice Questions link on Linked list page
+    And     User is navigated to a blank page from Linked list page
+
+   
+  @L2
+   Scenario Outline: Linked list page links validation 
+    When  User clicks on the "<name>" links on Linked list page 
+    Then  User navigated to the "<name>" links Linked list page
+    And   User clicks on  Try here button on the links page
+    And   User is directed to tryEditor Page with a run button to test on Links page
      Examples: 
       | name  |
       |Introduction|
-      |Creating Linked List|
+      |Creating Linked LIst|
       |Types of Linked List|
       |Implement Linked List in Python|
       |Traversal|
       |Insertion|
       |Deletion|
-  
-  @tag2
-  Scenario: To check <Practice Quetions>link
-  
-  Given User is on linked List <link> page 
-  When  User is able to see<Practice Questions> link
-  And   User clicks on < Practice Questions> link
-  Then  User is redirected to a blank page
+      
+   @L3   
+    Scenario Outline:Linked list links validation with valid input 
+    When  User clicks on the "<name>" links on Linked list page
+    And   User clicks on  Try here button on the links page 
+   When   User enters a code in Linkedlist try Editor from sheet "<sheetName>" and <RowNumber>
+   Then   User clicks on run button on Linkedlist try Editor
+    And   User can see the output on Linkedlist
+    Examples:
+     |name                                    | sheetName            |RowNumber |
+     | Introduction                           |  Linkedlistcode       |0       |
+     | Creating Linked LIst                   |  Linkedlistcode       |0       |
+     | Types of Linked List                   |  Linkedlistcode       |0       |  
+     | Implement Linked List in Python        |  Linkedlistcode       |0       |
+     |Traversal                               |  Linkedlistcode       |0       |
+     |Insertion                               |  Linkedlistcode       |0       |
+     |Deletion                                | Linkedlistcode        |0       |
+   
+   
+   @L4  
+    Scenario Outline: Linked list links validation with Invalid input 
+    When  User clicks on the "<name>" links on Linked list page
+    And   User clicks on  Try here button on the links page 
+   When   User enters a code in Linkedlist try Editor from sheet "<sheetName>" and <RowNumber>
+   Then   User clicks on run button on Linkedlist try Editor
+    And   User can see the Errormessage alert on Linkedlist
+    Examples:
+     |name                                    | sheetName            |RowNumber |
+     |Introduction                            |  Linkedlistcode       |1       |
+     |Creating Linked LIst                    |  Linkedlistcode       |1       |
+     |Types of Linked List                    |  Linkedlistcode       |1       |  
+     |Implement Linked List in Python         |  Linkedlistcode       |1       |
+     |Traversal                               |  Linkedlistcode       |1       |
+     |Insertion                               |  Linkedlistcode       |1       |
+     |Deletion                                |  Linkedlistcode       |1       |
+   

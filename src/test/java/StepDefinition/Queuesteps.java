@@ -1,248 +1,152 @@
 package StepDefinition;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import Driver.Driver_Factory;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.messages.types.Duration;
+import pageObjects.DsAlgoQueuePage;
+import pageObjects.dsAlgoHomePage;
+import pageObjects.dsAlgoLoginPage;
+import utilities.ExcelReader;
 
 public class Queuesteps {
+	private DsAlgoQueuePage Qp = new DsAlgoQueuePage(Driver_Factory.getDriver());
+	WebDriver driver;
+	dsAlgoHomePage hp;
+	dsAlgoLoginPage lp;
+
+
+	@Then("User clicks on the Get Started button in Queue pane")
+	public void user_clicks_on_the_get_started_button_in_queue_pane() {
+		Qp.GetStartedQp.click();
+	}
+
+	@Then("User is navigated to Queue Page")
+	public void user_is_navigated_to_queue_page() {
+		assertEquals(Qp.QueuePage.getText(), "Queue");
+	}
+
+	@When("User selects Queue from the drop down menu")
+	public void user_selects_queue_from_the_drop_down_menu() {
+
+		Qp.DataDropdown.click();
+		Qp.QueueDropdown.click();
+	}
+
+	@Then("User is navigated to the queue page")
+	public void user_is_navigated_to_the_queue_page() {
+
+		assertEquals(Qp.QueuePage.getText(), "Queue");
+	}
+
+	@Given("User is on the queue page")
+	public void user_is_on_the_queue_page() {
+
+		Qp.GetStartedQp.click();
+	}
+
+	@Then("User clicks on Implementation of Queue in Python link on queue page")
+	public void user_clicks_on_implementation_of_queue_in_python_link_on_queue_page() {
+
+		Qp.Implementation.click();
+	}
+
+	@Then("User clicks on the practice Questions link on queue page")
+	public void user_clicks_on_the_practice_questions_link_on_queue_page() {
+
+		Qp.Practice.click();
+	}
+
+	@Then("User is navigated to a blank page from queue page")
+	public void user_is_navigated_to_a_blank_page_from_queue_page() {
+
+		Qp.practiceblank_page.isDisplayed();
+	}
+
+	@When("User clicks on the {string} links on queue page")
+	public void user_clicks_on_the_links_on_queue_page(String String) throws InterruptedException {
+
+		Thread.sleep(2000);
+		Qp.Queuelinks(String);
+
+	}
+
+	@Then("User navigated to the {string} links queue page")
+	public void user_navigated_to_the_links_queue_page(String string) {
+		Qp.QueuelinksDisplay(string);
+	}
+
+	@Then("User clicks on  Try here button on queue page")
+	public void user_clicks_on_try_here_button() throws InterruptedException {
+
+
+		Thread.sleep(3000);
+		Qp.Tryherebtn.isDisplayed();
+		Qp.Tryherebtn.click();
+	}
+
+	@Then("User is directed to Queue tryEditor Page with a run button to test")
+	public void user_is_directed_to_try_editor_page_with_a_run_button_to_test() throws InterruptedException {
+
+		Thread.sleep(3000);
+		Qp.Run.isDisplayed();
+	}
+
+	@When("User enters a code in Queue try Editor from sheet {string} and {int}")
+	public void user_enters_a_code_in_try_editor_from_sheet_and(String sheetname, Integer RowNumber)
+		throws InvalidFormatException, IOException {
+		try {Thread.sleep(1000);
+		} 
+		catch (InterruptedException e) {
 	
-	private dsAlgohomepage hp = new dsAlgohomepage(Driver_Factory.getDriver());
-	
-	@Given("User clicks the Get Started button in <Queue> pane or select <Queue> from the drop down menu")
-	public void user_clicks_the_get_started_button_in_queue_pane_or_select_queue_from_the_drop_down_menu() {
-		
-		public void user_enters_homepage_url() {
+			e.printStackTrace();
+		}
+		ExcelReader reader = new ExcelReader();
+		List<Map<String, String>> testData = reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx",
+				sheetname);
+		String code1 = testData.get(RowNumber).get("Queuecode");
+		System.out.println("The valid input is :"+code1);
+		Qp.Queue_validcode(code1);
 
-//			String url = ConfigReader.init_prop("HomePageUrl");
-//			driver.get(url);
-//			
-//			System.setProperty("webdriver.chrome.driver","/Users/ark/Downloads/chromedriver");
-//			ChromeOptions opt =new ChromeOptions();
-//			opt.addArguments("--remote-allow-origins=*");
-//			WebDriver driver=new ChromeDriver(opt);
-			//driver.get("https://dsportalapp.herokuapp.com/");
-	     	//driver.get("https://dsportalapp.herokuapp.com/");
-//			driver.manage().window().maximize();
-//		   
-		} // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
 	}
 
-	@Then("User should be able to see <Queue> page")
-	public void user_should_be_able_to_see_queue_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("User clicks on run button on queue page")
+	public void user_clicks_on_run_button() {
+
+		Qp.Run.click();
 	}
 
-	@Given("User is on the home page")
-	public void user_is_on_the_home_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	@Then("User can see the output on queue page")
+	public void user_can_see_the_output() {
+
+		Qp.Output.isDisplayed();
+		assertEquals(Qp.Output.getText(), "This is Queue in python");
 	}
 
-	@When("user clicks on get started button in <Queue> pane")
-	public void user_clicks_on_get_started_button_in_queue_pane() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
+	@Then("User can see the Errormessage alert on queue page")
+	public void user_can_see_the_errormessage_alert() {
+		Qp.acceptBrowserAlert();
 
-	@Then("User is able to see <Queue> page")
-	public void user_is_able_to_see_queue_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
 	}
-
-	@Then("user is able to see Implementation of Queue in Python links on <Queue> page")
-	public void user_is_able_to_see_implementation_of_queue_in_python_links_on_queue_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("user is able to see Implementation using collections.deque links on <Queue> page")
-	public void user_is_able_to_see_implementation_using_collections_deque_links_on_queue_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("user is able to see Implementation using array links on <Queue> page")
-	public void user_is_able_to_see_implementation_using_array_links_on_queue_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("user is able to see Queue Operations links on <Queue> page")
-	public void user_is_able_to_see_queue_operations_links_on_queue_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User clicks the Implementation of Queue in Python link button")
-	public void user_clicks_the_implementation_of_queue_in_python_link_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be redirected to the Implementation of Queue in Python page")
-	public void user_should_be_redirected_to_the_implementation_of_queue_in_python_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be able to see Try Here button")
-	public void user_should_be_able_to_see_try_here_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User clicks the Implementation using collections.deque link button")
-	public void user_clicks_the_implementation_using_collections_deque_link_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be redirected to the Implementation using collections.deque page")
-	public void user_should_be_redirected_to_the_implementation_using_collections_deque_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User clicks the Implementation using array link button")
-	public void user_clicks_the_implementation_using_array_link_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be redirected to the Implementation using array page")
-	public void user_should_be_redirected_to_the_implementation_using_array_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User clicks the Queue Operations link button")
-	public void user_clicks_the_queue_operations_link_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be redirected to the Queue Operations page")
-	public void user_should_be_redirected_to_the_queue_operations_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Implementation of Queue in Python page")
-	public void user_validates_try_here_button_in_the_implementation_of_queue_in_python_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be redirected to a page having Try Editor with a run button to test")
-	public void user_should_be_redirected_to_a_page_having_try_editor_with_a_run_button_to_test() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Implementation using collections.deque page")
-	public void user_validates_try_here_button_in_the_implementation_using_collections_deque_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Implementation using array page")
-	public void user_validates_try_here_button_in_the_implementation_using_array_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Queue Operations page")
-	public void user_validates_try_here_button_in_the_queue_operations_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Implementation of Queue in Pythonpage with <valid code>")
-	public void user_validates_try_here_button_in_the_implementation_of_queue_in_pythonpage_with_valid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User clicks <run>")
-	public void user_clicks_run() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User is able to see output on the console")
-	public void user_is_able_to_see_output_on_the_console() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Implementation using collections.dequepage with <valid code>")
-	public void user_validates_try_here_button_in_the_implementation_using_collections_dequepage_with_valid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Implementation using arraypage with <valid code>")
-	public void user_validates_try_here_button_in_the_implementation_using_arraypage_with_valid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates <Try Here> button in the Queue Operationspage with <valid code>")
-	public void user_validates_try_here_button_in_the_queue_operationspage_with_valid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates Try Here button in theImplementation of Queue in Pythonpage with invalid code")
-	public void user_validates_try_here_button_in_the_implementation_of_queue_in_pythonpage_with_invalid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User clicks run")
-	public void user_clicks_run() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("It should display Nameerror message")
-	public void it_should_display_nameerror_message() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates Try Here button in theImplementation using collections.dequepage with invalid code")
-	public void user_validates_try_here_button_in_the_implementation_using_collections_dequepage_with_invalid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates Try Here button in theImplementation using arraypage with invalid code")
-	public void user_validates_try_here_button_in_the_implementation_using_arraypage_with_invalid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User validates Try Here button in theQueue Operationspage with invalid code")
-	public void user_validates_try_here_button_in_the_queue_operationspage_with_invalid_code() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@When("User click <Practice Questions> button")
-	public void user_click_practice_questions_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
-	@Then("User should be redirected to the blank page")
-	public void user_should_be_redirected_to_the_blank_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
-	}
-
 
 }
