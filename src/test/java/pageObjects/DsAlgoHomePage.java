@@ -16,7 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class dsAlgoHomePage {
+public class DsAlgoHomePage {
 	
 	private WebDriver driver;
 	
@@ -50,7 +50,7 @@ public class dsAlgoHomePage {
 	@FindBy (xpath="//a[@class='dropdown-item']/../a[text()='Graph']") WebElement Gphlist;
 
 	
-	public dsAlgoHomePage(WebDriver driver){
+	public DsAlgoHomePage(WebDriver driver){
 		
         PageFactory.initElements(driver, this);
 
