@@ -13,11 +13,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.Loggerload;
+
 public class DsAlgoLinkedlistPage {
 	WebDriver driver;
 	public Actions action;
 
-	// Locators
 	@FindBy(xpath = "//h5[text()='Linked List']/..//a[text()='Get Started']")
 	public WebElement GetStartedLp;
 	@FindBy(xpath = "//div[@class='nav-item dropdown']")
@@ -69,7 +70,6 @@ public class DsAlgoLinkedlistPage {
 
 	private WebDriverWait wait;
 
-	// constructors
 	public DsAlgoLinkedlistPage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
@@ -82,31 +82,31 @@ public class DsAlgoLinkedlistPage {
 		if ("Introduction".equals(String)) {
 			String value = Introductionpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Creating Linked LIst".equals(String)) {
 			String value = Creatingpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Types of Linked List".equals(String)) {
 			String value = Typespage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Implement Linked List in Python".equals(String)) {
 			String value = Implementpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Traversal".equals(String)) {
 			String value = Traversalpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Insertion".equals(String)) {
 			String value = Insertionpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Deletion".equals(String)) {
 			String value = Deletionpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		}
 
 	}
@@ -147,9 +147,8 @@ public class DsAlgoLinkedlistPage {
 	}
 
 	public void Linkedlist_validcode(String code) {
-		// Actions action=new Actions(driver);
-
-		action.moveToElement(tryEditor).doubleClick().click().sendKeys(code).build().perform();
+	
+        action.moveToElement(tryEditor).doubleClick().click().sendKeys(code).build().perform();
 	}
 
 	public static void acceptBrowserAlert(WebDriver driver) {
@@ -168,7 +167,7 @@ public class DsAlgoLinkedlistPage {
 	public void acceptBrowserAlert() {
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		String alertMessage1 = alert.getText();
-		System.out.println(alertMessage1);
+		Loggerload.info("The Error message displayed is :" +alertMessage1);
 		alert.accept();
 	}
 

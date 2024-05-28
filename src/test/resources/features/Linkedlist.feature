@@ -1,4 +1,4 @@
-@DsAlgoLinked_ListPage
+@DsAlgoLinkedlistPage
 Feature: LinkedList feature
   I want to use this template for my feature file
 
@@ -6,7 +6,7 @@ Feature: LinkedList feature
    Given User enters homepage url
    When  User Clicks on Get Started button
    And   User clicks on the Sign in link
-   And Click on Login with Valid Username and Password
+   And   Click on Login with Valid Username and Password
    Then  User clicks on the Get Started button in Linked list pane 
   
 
