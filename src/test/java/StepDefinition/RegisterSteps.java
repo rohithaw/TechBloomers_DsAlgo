@@ -12,7 +12,7 @@ import context.Textcontext;
 import io.cucumber.java.en.*;
 import pageObjects.DsAlgoHomePage;
 import pageObjects.DsAlgoRegisterPage;
-//import utilities.CommonMethods;
+import utilities.CommonMethods;
 import utilities.Loggerload;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.DataTableType;
@@ -103,12 +103,11 @@ public class RegisterSteps {
 			 String Message=rp.err_Alert();
 			 Loggerload.info(Message);
 //			 rp.Sshot();
-//			 String expectedmessage=form.get("status");
-//			 Assert.assertEquals(Message, expectedmessage);
+			 String expectedmessage=form.get("status");
+			 Assert.assertEquals(Message, expectedmessage);
 			 
 		 }
 	}
-
 	
 
 }

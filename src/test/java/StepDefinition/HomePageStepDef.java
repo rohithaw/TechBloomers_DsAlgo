@@ -15,7 +15,7 @@ import context.Textcontext;
 import io.cucumber.java.en.*;
 import pageObjects.DsAlgoHomePage;
 import pageObjects.DsAlgoLoginPage;
-//import utilities.CommonMethods;
+import utilities.CommonMethods;
 import utilities.ConfigReader;
 import utilities.Loggerload;
 import utilities.PropertiesFile;
