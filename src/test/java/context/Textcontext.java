@@ -9,10 +9,16 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.dsAlgoArrayPage;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
-import pageObjects.dsAlgoRegisterPage;
+import pageObjects.DsAlgoArrayPage;
+import pageObjects.DsAlgoDataStructureIntroPage;
+import pageObjects.DsAlgoGraphPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLinkedlistPage;
+import pageObjects.DsAlgoLoginPage;
+import pageObjects.DsAlgoQueuePage;
+import pageObjects.DsAlgoRegisterPage;
+import pageObjects.DsAlgoStackPage;
+import pageObjects.DsAlgoTreePage;
 import utilities.PropertiesFile;
 
 import java.time.Duration;
@@ -22,10 +28,17 @@ public class Textcontext {
 	protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
 	WebDriver driver;
 	
-	dsAlgoHomePage hp;
-	dsAlgoRegisterPage rp;
-	dsAlgoLoginPage lp;
-	dsAlgoArrayPage ap;
+	DsAlgoHomePage hp;
+	DsAlgoRegisterPage rp;
+	DsAlgoLoginPage lp;
+	DsAlgoArrayPage ap;
+	DsAlgoDataStructureIntroPage dSIP;
+	DsAlgoGraphPage gp;
+	DsAlgoLinkedlistPage ll;
+	DsAlgoQueuePage qp;
+	DsAlgoStackPage sp;
+	DsAlgoTreePage tp;
+	
 	
 	
 	public void setDriver(WebDriver driver) {
@@ -70,30 +83,60 @@ public class Textcontext {
 		return threadLocalDriver.get();
 	}
 
-	public dsAlgoHomePage getHp() {
+	public DsAlgoHomePage getHp() {
 		return hp;
 	}	
 	
-	public dsAlgoRegisterPage getRp() {
+	public DsAlgoRegisterPage getRp() {
 		return rp;
 	}
 	
-	public dsAlgoLoginPage getLp() {
+	public DsAlgoLoginPage getLp() {
 		return lp;
 	}
 
-	public dsAlgoArrayPage getAp() {
+	public DsAlgoArrayPage getAp() {
 		return ap;
 	}
+	
+	public DsAlgoDataStructureIntroPage getDSIP() {
+		return dSIP;
+	}	
+	
+	public DsAlgoGraphPage getGp() {
+		return gp;
+	}	
+	
+	public DsAlgoLinkedlistPage getLl() {
+		return ll;
+	}	
+	
+	public DsAlgoQueuePage getQp() {
+		return qp;
+	}	
+	
+	public DsAlgoStackPage getSp() {
+		return sp;
+	}	
+	
+	public DsAlgoTreePage getTp() {
+		return tp;
+	}	
 
 	
 	
 	public void initializePageObjects(WebDriver driver) {
 
-		this.hp = new dsAlgoHomePage(driver);
-		this.rp = new dsAlgoRegisterPage(driver);
-		this.lp = new dsAlgoLoginPage(driver);
-		this.ap = new dsAlgoArrayPage(driver);
+		this.hp = new DsAlgoHomePage(driver);
+		this.rp = new DsAlgoRegisterPage(driver);
+		this.lp = new DsAlgoLoginPage(driver);
+		this.ap = new DsAlgoArrayPage(driver);
+		this.tp = new DsAlgoTreePage(driver);
+		this.sp = new DsAlgoStackPage(driver);
+		this.qp = new DsAlgoQueuePage(driver);
+		this.ll = new DsAlgoLinkedlistPage(driver);
+		this.gp = new DsAlgoGraphPage(driver);
+		this.dSIP =new DsAlgoDataStructureIntroPage(driver);
 		
 
 	}
