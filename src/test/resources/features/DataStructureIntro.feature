@@ -1,11 +1,11 @@
-@DSI
+@DSAlgo_DataStructure
 Feature: DataStructure-Introduction page feature
 
   Background: User checks Get Started in DS Pane
     Given User enters homepage url
     When User Clicks on Get Started button
     And User clicks on the Sign in link
-    And Clicks on Login
+    And Click on Login with Valid Username and Password
     When User finds the DataStructure pane and clicks on Get Started button
     Then User navigated to Datastructure-Introductuion page
 

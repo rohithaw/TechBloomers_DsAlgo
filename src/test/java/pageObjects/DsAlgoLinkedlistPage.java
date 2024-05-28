@@ -13,7 +13,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DsAlgoLinked_listPage {
+public class DsAlgoLinkedlistPage {
 	WebDriver driver;
 	public Actions action;
 
@@ -70,7 +70,7 @@ public class DsAlgoLinked_listPage {
 	private WebDriverWait wait;
 
 	// constructors
-	public DsAlgoLinked_listPage(WebDriver driver) {
+	public DsAlgoLinkedlistPage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
 		this.action = new Actions(driver);

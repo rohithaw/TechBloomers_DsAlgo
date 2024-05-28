@@ -25,8 +25,8 @@ public class DsAlgoTreePage {
 	@FindBy(xpath="//div//h4[text()='Tree']")public WebElement treePage;
 	@FindBy(xpath="//a[@href='overview-of-trees']")public WebElement overview;
 	
-	@FindBy(linkText="Terminologies")public WebElement terminologies;
-	@FindBy(linkText="Types of Trees")public WebElement typesoftrees;
+	@FindBy(xpath="//a[@href='terminologies']")public WebElement terminologies;
+	@FindBy(xpath="//a[@href='types-of-trees']")public WebElement typesoftrees;
 	@FindBy(linkText="Tree Traversals")public WebElement treetraversals;
 	@FindBy(linkText="Traversals-Illustration")public WebElement traversalsIllustration;
 	@FindBy(linkText="Binary Trees")public WebElement binaryTrees;

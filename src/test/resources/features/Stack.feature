@@ -4,7 +4,7 @@ Feature: Stack Feature
     Given User enters homepage url
     When User Clicks on Get Started button
     And User clicks on the Sign in link
-    And Clicks on Login
+    And Click on Login with Valid Username and Password
     And Click on the Get Started button for Stack Datastructures
 
   @SF1

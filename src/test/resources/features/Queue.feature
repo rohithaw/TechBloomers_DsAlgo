@@ -6,7 +6,7 @@
    Given User enters homepage url
    When  User Clicks on Get Started button
    And   User clicks on the Sign in link
-   And   Clicks on Login
+   And Click on Login with Valid Username and Password
    Then  User clicks on the Get Started button in Queue pane 
  
 
