@@ -10,8 +10,9 @@ import org.testng.Assert;
 import Driver.Driver_Factory;
 import context.Textcontext;
 import io.cucumber.java.en.*;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoRegisterPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoRegisterPage;
+//import pageObjects.dsAlgoRegisterPage;
 import utilities.CommonMethods;
 import utilities.Loggerload;
 import io.cucumber.datatable.DataTable;
@@ -20,8 +21,8 @@ import io.cucumber.java.DataTableType;
 public class RegisterSteps {
 	
 	WebDriver driver;
-	dsAlgoHomePage hp;
-	dsAlgoRegisterPage rp;
+	DsAlgoHomePage hp;
+	DsAlgoRegisterPage rp;
 	Textcontext textContext;
 	
 	//private dsAlgoRegisterPage rp = new dsAlgoRegisterPage(Driver_Factory.getDriver());

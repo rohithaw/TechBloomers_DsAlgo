@@ -29,11 +29,9 @@ import pageObjects.DsAlgoQueuePage;
 import pageObjects.DsAlgoHomePage;
 import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
+import utilities.Loggerload;
 
 public class Queuesteps {
-	
-	//private DsAlgoQueuePage Qp = new DsAlgoQueuePage(Driver_Factory.getDriver());
-	
 	
 	WebDriver driver;
 	DsAlgoHomePage hp;
@@ -136,7 +134,7 @@ public class Queuesteps {
 		List<Map<String, String>> testData = reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx",
 				sheetname);
 		String code1 = testData.get(RowNumber).get("Queuecode");
-		System.out.println("The valid input is :"+code1);
+		Loggerload.info("The valid input is :"+code1);
 		qp.Queue_validcode(code1);
 
 	}

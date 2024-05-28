@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.Loggerload;
 
-public class dsAlgoLoginPage {
+public class DsAlgoLoginPage {
 	
 	
 	//Locators
@@ -22,7 +22,7 @@ public class dsAlgoLoginPage {
 	
 	//Constructor
 	
-public dsAlgoLoginPage(WebDriver driver){
+public DsAlgoLoginPage(WebDriver driver){
 		
         PageFactory.initElements(driver, this);
 
