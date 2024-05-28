@@ -7,20 +7,30 @@ import java.util.Map;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import Driver.Driver_Factory;
+import context.Textcontext;
 import io.cucumber.java.en.*;
-import pageObjects.StackPage;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
+import pageObjects.DsAlgoStackPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
 import utilities.Loggerload;
 
 public class StackSteps {
 	
 	 WebDriver driver;
-	 dsAlgoLoginPage lp;
-	 dsAlgoHomePage hp;
+	 DsAlgoLoginPage lp;
+	 DsAlgoHomePage hp;
+	 DsAlgoStackPage sp;
+	 Textcontext textContext;
+		 
+	//private DsAlgoStackPage sp = new DsAlgoStackPage(Driver_Factory.getDriver());
 	 
-	private StackPage sp = new StackPage(Driver_Factory.getDriver());
+	 public StackSteps(Textcontext textContext) { 
+			this.textContext = textContext;
+			this.driver = textContext.getDriver();
+			this.sp = textContext.getSp();
+		}
+		
 
 	
 	@And ("Click on the Get Started button for Stack Datastructures")

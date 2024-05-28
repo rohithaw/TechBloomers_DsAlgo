@@ -19,81 +19,92 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import Driver.Driver_Factory;
+import context.Textcontext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.messages.types.Duration;
 import pageObjects.DsAlgoQueuePage;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
 
 public class Queuesteps {
-	private DsAlgoQueuePage Qp = new DsAlgoQueuePage(Driver_Factory.getDriver());
+	
+	//private DsAlgoQueuePage Qp = new DsAlgoQueuePage(Driver_Factory.getDriver());
+	
+	
 	WebDriver driver;
-	dsAlgoHomePage hp;
-	dsAlgoLoginPage lp;
-
+	DsAlgoHomePage hp;
+	DsAlgoLoginPage lp;
+	DsAlgoQueuePage qp;
+	Textcontext textContext;
+	
+	public Queuesteps(Textcontext textContext) { 
+		this.textContext = textContext;
+		this.driver = textContext.getDriver();
+		this.qp = textContext.getQp();
+	}
 
 	@Then("User clicks on the Get Started button in Queue pane")
 	public void user_clicks_on_the_get_started_button_in_queue_pane() {
-		Qp.GetStartedQp.click();
+		qp.GetStartedQp.click();
 	}
 
 	@Then("User is navigated to Queue Page")
 	public void user_is_navigated_to_queue_page() {
-		assertEquals(Qp.QueuePage.getText(), "Queue");
+		assertEquals(qp.QueuePage.getText(), "Queue");
 	}
 
 	@When("User selects Queue from the drop down menu")
 	public void user_selects_queue_from_the_drop_down_menu() {
 
-		Qp.DataDropdown.click();
-		Qp.QueueDropdown.click();
+		qp.DataDropdown.click();
+		qp.QueueDropdown.click();
 	}
 
 	@Then("User is navigated to the queue page")
 	public void user_is_navigated_to_the_queue_page() {
 
-		assertEquals(Qp.QueuePage.getText(), "Queue");
+		assertEquals(qp.QueuePage.getText(), "Queue");
 	}
 
 	@Given("User is on the queue page")
 	public void user_is_on_the_queue_page() {
 
-		Qp.GetStartedQp.click();
+		qp.GetStartedQp.click();
 	}
 
 	@Then("User clicks on Implementation of Queue in Python link on queue page")
 	public void user_clicks_on_implementation_of_queue_in_python_link_on_queue_page() {
 
-		Qp.Implementation.click();
+		qp.Implementation.click();
 	}
 
 	@Then("User clicks on the practice Questions link on queue page")
 	public void user_clicks_on_the_practice_questions_link_on_queue_page() {
 
-		Qp.Practice.click();
+		qp.Practice.click();
 	}
 
 	@Then("User is navigated to a blank page from queue page")
 	public void user_is_navigated_to_a_blank_page_from_queue_page() {
 
-		Qp.practiceblank_page.isDisplayed();
+		qp.practiceblank_page.isDisplayed();
 	}
 
 	@When("User clicks on the {string} links on queue page")
 	public void user_clicks_on_the_links_on_queue_page(String String) throws InterruptedException {
 
 		Thread.sleep(2000);
-		Qp.Queuelinks(String);
+		qp.Queuelinks(String);
 
 	}
 
 	@Then("User navigated to the {string} links queue page")
 	public void user_navigated_to_the_links_queue_page(String string) {
-		Qp.QueuelinksDisplay(string);
+		qp.QueuelinksDisplay(string);
 	}
 
 	@Then("User clicks on  Try here button on queue page")
@@ -101,15 +112,15 @@ public class Queuesteps {
 
 
 		Thread.sleep(3000);
-		Qp.Tryherebtn.isDisplayed();
-		Qp.Tryherebtn.click();
+		qp.Tryherebtn.isDisplayed();
+		qp.Tryherebtn.click();
 	}
 
 	@Then("User is directed to Queue tryEditor Page with a run button to test")
 	public void user_is_directed_to_try_editor_page_with_a_run_button_to_test() throws InterruptedException {
 
 		Thread.sleep(3000);
-		Qp.Run.isDisplayed();
+		qp.Run.isDisplayed();
 	}
 
 	@When("User enters a code in Queue try Editor from sheet {string} and {int}")
@@ -126,26 +137,26 @@ public class Queuesteps {
 				sheetname);
 		String code1 = testData.get(RowNumber).get("Queuecode");
 		System.out.println("The valid input is :"+code1);
-		Qp.Queue_validcode(code1);
+		qp.Queue_validcode(code1);
 
 	}
 
 	@Then("User clicks on run button on queue page")
 	public void user_clicks_on_run_button() {
 
-		Qp.Run.click();
+		qp.Run.click();
 	}
 
 	@Then("User can see the output on queue page")
 	public void user_can_see_the_output() {
 
-		Qp.Output.isDisplayed();
-		assertEquals(Qp.Output.getText(), "This is Queue in python");
+		qp.Output.isDisplayed();
+		assertEquals(qp.Output.getText(), "This is Queue in python");
 	}
 
 	@Then("User can see the Errormessage alert on queue page")
 	public void user_can_see_the_errormessage_alert() {
-		Qp.acceptBrowserAlert();
+		qp.acceptBrowserAlert();
 
 	}
 
