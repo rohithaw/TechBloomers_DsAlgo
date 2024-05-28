@@ -7,10 +7,11 @@ import java.util.Map;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import Driver.Driver_Factory;
+import context.Textcontext;
 import io.cucumber.java.en.*;
-import pageObjects.GraphPage;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
+import pageObjects.DsAlgoGraphPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
 import utilities.Loggerload;
 
@@ -18,10 +19,18 @@ import utilities.Loggerload;
 public class GraphSteps {
 	
 	 WebDriver driver;
-	 dsAlgoLoginPage lp;
-	 dsAlgoHomePage hp;
-	
-	 private GraphPage gp = new GraphPage(Driver_Factory.getDriver());
+	 DsAlgoLoginPage lp;
+	 DsAlgoHomePage hp;
+	 DsAlgoGraphPage gp;
+	 Textcontext textContext;
+	 
+	// private DsAlgoGraphPage gp = new DsAlgoGraphPage(Driver_Factory.getDriver());
+	 
+	 public GraphSteps(Textcontext textContext) { 
+			this.textContext = textContext;
+			this.driver = textContext.getDriver();
+			this.gp = textContext.getGp();
+		}
 	
 	@Given("User is Signed-in")
 	public void user_is_signed_in() {

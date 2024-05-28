@@ -15,9 +15,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.Loggerload;
 
 public class DsAlgoDataStructureIntroPage {
+	
+	
 	private WebDriver driver;
 	public  Actions action ;
-	
 	public WebDriverWait wait;
 	//FindBy locators
 	
@@ -36,12 +37,13 @@ public class DsAlgoDataStructureIntroPage {
 	@FindBy(xpath="//div//pre[@id='output']")public WebElement output;
 	@FindBy(xpath="//a[text()='Practice Questions']")public WebElement practiceQuesLink;
 	@FindBy(xpath="/html/body") public WebElement practiceQuestion_page;
+	@FindBy(xpath = "//pre[@id='output']") public WebElement outputdisplay;
 	
 	public DsAlgoDataStructureIntroPage(WebDriver driver){
 		
         PageFactory.initElements(driver, this);
         this.action = new Actions(driver);
-        
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(100));
     }
 	
     public void clickGetStartedDataStructurePane() {

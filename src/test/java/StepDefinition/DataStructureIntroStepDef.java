@@ -11,23 +11,34 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import Driver.Driver_Factory;
+import context.Textcontext;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.DsAlgoDataStructureIntroPage;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLoginPage;
 
 
 public class DataStructureIntroStepDef {
-	public WebDriver driver;
-	private DsAlgoDataStructureIntroPage dSIP = new DsAlgoDataStructureIntroPage(Driver_Factory.getDriver());
-	dsAlgoHomePage hp;
-	dsAlgoLoginPage lp;
 	
 	
-
+	WebDriver driver;
+	Textcontext textContext;	
+	DsAlgoHomePage hp;
+	DsAlgoLoginPage lp;
+	DsAlgoDataStructureIntroPage dSIP;
+	
+	
+	//private DsAlgoDataStructureIntroPage dSIP = new DsAlgoDataStructureIntroPage(Driver_Factory.getDriver());
+	
+	public DataStructureIntroStepDef(Textcontext textContext) { 
+		this.textContext = textContext;
+		this.driver = textContext.getDriver();
+		this.dSIP = textContext.getDSIP();
+	}
+	
 
 	@When("User finds the DataStructure pane and clicks on Get Started button")
 	public void user_finds_the_data_structure_pane_and_clicks_on_get_started_button() {
@@ -68,6 +79,7 @@ public class DataStructureIntroStepDef {
 	public void enters_validcode_and_clicks_on_Run_button() {
 
        dSIP.clickOnTryEditorTextArea();
+       dSIP.clickOnRunButton();
      	
 	}
 	
@@ -80,7 +92,10 @@ public class DataStructureIntroStepDef {
 		
 	@Then("User sees the output")
 	public void user_sees_the_output() {
-	   dSIP.acceptBrowserAlert();
+	  
+		//dSIP.acceptBrowserAlert();
+		dSIP.outputdisplay.getText();
+		assertEquals(dSIP.outputdisplay.getText(),"Data in python");
 	 		
 	}
 	

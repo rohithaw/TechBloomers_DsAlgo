@@ -10,18 +10,18 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebDriver;
 import context.Textcontext;
 import io.cucumber.java.en.*;
-import pageObjects.dsAlgoArrayPage;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
+import pageObjects.DsAlgoArrayPage;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
 import utilities.Loggerload;
 
 public class ArrayStepDef {
 	
 	WebDriver driver;
-	dsAlgoHomePage hp;
-	dsAlgoLoginPage lp;
-	dsAlgoArrayPage ap;
+	DsAlgoHomePage hp;
+	DsAlgoLoginPage lp;
+	DsAlgoArrayPage ap;
 	Textcontext textContext;
 	
 	
