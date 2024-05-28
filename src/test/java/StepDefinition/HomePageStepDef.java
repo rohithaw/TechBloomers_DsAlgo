@@ -13,16 +13,16 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import Driver.Driver_Factory;
 import context.Textcontext;
 import io.cucumber.java.en.*;
-import pageObjects.dsAlgoHomePage;
-import pageObjects.dsAlgoLoginPage;
-import utilities.CommonMethods;
+import pageObjects.DsAlgoHomePage;
+import pageObjects.DsAlgoLoginPage;
+//import utilities.CommonMethods;
 import utilities.ConfigReader;
 import utilities.Loggerload;
 import utilities.PropertiesFile;
 
 public class HomePageStepDef {
 	
-	dsAlgoHomePage hp;
+	DsAlgoHomePage hp;
 	WebDriver driver;
 	Textcontext textContext;
 	
