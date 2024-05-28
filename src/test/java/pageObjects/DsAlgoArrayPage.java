@@ -24,7 +24,7 @@ import utilities.CommonMethods;
 import utilities.ExcelReader;
 import utilities.Loggerload;
 
-public class dsAlgoArrayPage {
+public class DsAlgoArrayPage {
 	
     WebDriver driver;
 	public static Actions action;
@@ -66,7 +66,7 @@ public class dsAlgoArrayPage {
 	@FindBy(xpath="//pre[@id='output']")public WebElement  outputpractisePage;
 	@FindBy(xpath="//input[@value='Submit']")public WebElement submitbtn;
 	
-	public dsAlgoArrayPage(WebDriver driver) {
+	public DsAlgoArrayPage(WebDriver driver) {
 		
       PageFactory.initElements(driver, this);
       this.action=new Actions(driver);

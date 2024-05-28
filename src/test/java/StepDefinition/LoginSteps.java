@@ -12,7 +12,7 @@ import org.openqa.selenium.WebElement;
 import Driver.Driver_Factory;
 import context.Textcontext;
 import io.cucumber.java.en.*;
-import pageObjects.dsAlgoLoginPage;
+import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
 import utilities.Loggerload;
 import utilities.PropertiesFile;
@@ -20,7 +20,7 @@ import utilities.PropertiesFile;
 public class LoginSteps {
 	
 	WebDriver driver;
-	dsAlgoLoginPage lp;
+	DsAlgoLoginPage lp;
 	Textcontext textContext;
 	
 	//private dsAlgoLoginPage lp = new dsAlgoLoginPage(Driver_Factory.getDriver());

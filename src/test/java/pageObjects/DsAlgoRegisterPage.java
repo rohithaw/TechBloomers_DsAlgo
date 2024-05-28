@@ -16,7 +16,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import utilities.Loggerload;
 
-public class dsAlgoRegisterPage {
+public class DsAlgoRegisterPage {
 	
 	
 	@FindBy(name = "username") public WebElement username_Register;
@@ -30,7 +30,7 @@ public class dsAlgoRegisterPage {
 	@FindBy (xpath="/html/body/div[3]") WebElement Alert;
 	
 	
-	public dsAlgoRegisterPage(WebDriver driver) {
+	public DsAlgoRegisterPage(WebDriver driver) {
 		
 		PageFactory.initElements(driver,this);
 		
