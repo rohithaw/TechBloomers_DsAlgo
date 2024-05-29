@@ -24,10 +24,10 @@ import pageObjects.DsAlgoQueuePage;
 import pageObjects.DsAlgoHomePage;
 import pageObjects.DsAlgoLoginPage;
 import utilities.ExcelReader;
+import utilities.Loggerload;
 
 public class Linkedliststeps {
 
-	//private DsAlgoLinkedlistPage ll = new DsAlgoLinkedlistPage(Driver_Factory.getDriver());
 	WebDriver driver;
 	DsAlgoHomePage hp;
 	DsAlgoLoginPage lp;
@@ -40,15 +40,6 @@ public class Linkedliststeps {
 		this.ll = textContext.getLl();
 	}
 	
-
-//	@When("User signs In to the application")
-//	public void user_signs_in_to_the_application() {
-//
-//		lp.UsernameText.sendKeys("Numpy4");
-//		lp.PasswordText.sendKeys("Testers@4");
-//		lp.Loginbtn.click();
-//
-//	}
 
 	@Then("User clicks on the Get Started button in Linked list pane")
 	public void user_clicks_on_the_get_started_button_in_Linked_list_pane() {
@@ -127,7 +118,7 @@ public class Linkedliststeps {
 		List<Map<String, String>> testData = reader.getData("./src/test/resources/testdata/TechBloomersDsalgo.xlsx",
 				sheetname);
 		String code1 = testData.get(RowNumber).get("Linkedlistcode");
-		System.out.println("The valid inputis : "+code1);
+		Loggerload.info("The valid input is : "+code1);
 		ll.Linkedlist_validcode(code1);
 
 	}

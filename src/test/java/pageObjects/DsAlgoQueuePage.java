@@ -12,6 +12,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import utilities.Loggerload;
+
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.UnhandledAlertException;
@@ -21,7 +24,6 @@ public class DsAlgoQueuePage {
 	WebDriver driver;
 	public Actions action;
 
-	// locators
 	@FindBy(xpath = "//h4[text()='Queue']")
 	public WebElement QueuePage;
 	@FindBy(xpath = "//h5[text()='Queue']/..//a[text()='Get Started']")
@@ -61,7 +63,6 @@ public class DsAlgoQueuePage {
 
 	private WebDriverWait wait;
 
-	// constructors
 	public DsAlgoQueuePage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
@@ -74,19 +75,19 @@ public class DsAlgoQueuePage {
 		if ("Implementation of Queue in Python".equals(String)) {
 			String value = Implementationpage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Implementation using collections.deque".equals(String)) {
 			String value = Implementationdequepage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Implementation using array".equals(String)) {
 			String value = Implementationarraypage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		} else if ("Queue Operations".equals(String)) {
 			String value = QueueOperationspage.getText();
 			assertsEquals(value, String);
-			System.out.println(value);
+			Loggerload.info(value);
 		}
 
 	}
@@ -137,7 +138,7 @@ public class DsAlgoQueuePage {
 	public void acceptBrowserAlert() {
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		String alertMessage1 = alert.getText();
-		System.out.println(alertMessage1);
+		Loggerload.info("The Error message displayed is :" +alertMessage1);
 		alert.accept();
 	}
 
