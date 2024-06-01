@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 	@CucumberOptions(
 			monochrome = false,  //console output formatting
 			tags = "@DSALGO", //tags from feature file
-			features = {"src/test/resources/features"}, //location of feature files
+			features = {"src/test/resources/features/Home.feature"}, //location of feature files
 			glue= {"StepDefinition","AppHooks"}, //location of step definition files
 			plugin = {"pretty", //For the Detailed output and generating reports.
 						"html:target/Cucumber-Reports/TechBloomers.html" , 
