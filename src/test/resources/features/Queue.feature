@@ -1,4 +1,4 @@
-@DsAlgoQueuePage
+@DSALGO
    Feature: Queue feature
    I want to use this template for my feature file
   

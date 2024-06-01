@@ -1,3 +1,4 @@
+@DSALGO
 Feature: Graph Feature
 
   Background: User is Signed-in and navigates to Graph Page
@@ -25,28 +26,29 @@ Feature: Graph Feature
     Examples: 
       | name                  |
       | Graph                 |
-      #| Graph Representations |
+      | Graph Representations |
 
-  #Scenario Outline: The user is able to run code in tryEditor for Graph page
-    #Given User clicks on "<name>" link in Graph Page
-    #And User clicks on Try here button in Graph Page
-    #When The user enters a valid python code in tryEditor from sheet "<Sheetname>" and <RowNumber> in Graph Page
-    #Then The user clicks on run button in Graph Page
-    #And The user should be presented with Run result in Graph Page
-#
-    #Examples: 
-      #| name                  | Sheetname       | RowNumber |
-      #| Graph                 | GraphpythonCode |         0 |
-      #| Graph Representations | GraphpythonCode |         0 |
-#
-  #Scenario Outline: The user gets error with invalid code in tryEditor for Graph page
-    #Given User clicks on "<name>" link in Graph Page
-    #And User clicks on Try here button in Graph Page
-    #When User enters a invalid python code in tryEditor from sheet "<Sheetname>" and <RowNumber> in Graph Page
-    #Then User clicks on run button in Graph Page
-    #And User should be presented with Error popup in Graph Page
-#
-    #Examples: 
-      #| name                  | Sheetname       | RowNumber |
-      #| Graph                 | GraphpythonCode |         1 |
-      #| Graph Representations | GraphpythonCode |         1 |
+ @G3
+  Scenario Outline: The user is able to run code in tryEditor for Graph page
+    Given User clicks on "<name>" link in Graph Page
+    And User clicks on Try here button in Graph Page
+    When The user enters a valid python code in tryEditor from sheet "<Sheetname>" and <RowNumber> in Graph Page
+    Then The user clicks on run button in Graph Page
+    And The user should be presented with Run result in Graph Page
+
+    Examples: 
+      | name                  | Sheetname       | RowNumber |
+      | Graph                 | GraphpythonCode |         0 |
+      | Graph Representations | GraphpythonCode |         0 |
+@G4
+  Scenario Outline: The user gets error with invalid code in tryEditor for Graph page
+    Given User clicks on "<name>" link in Graph Page
+    And User clicks on Try here button in Graph Page
+    When User enters a invalid python code in tryEditor from sheet "<Sheetname>" and <RowNumber> in Graph Page
+    Then User clicks on run button in Graph Page
+    And User should be presented with Error popup in Graph Page
+
+    Examples: 
+      | name                  | Sheetname       | RowNumber |
+      | Graph                 | GraphpythonCode |         1 |
+      | Graph Representations | GraphpythonCode |         1 |

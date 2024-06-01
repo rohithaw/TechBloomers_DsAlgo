@@ -1,4 +1,4 @@
-@DsAlgoHomePage
+@DSALGO
 Feature: Home Page Feature
 
   Background: User is on the homepage

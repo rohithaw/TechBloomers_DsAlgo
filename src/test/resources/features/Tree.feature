@@ -1,4 +1,4 @@
-@TreePage
+@DSALGO
 Feature: Tree page feature
 
   Background: User checks Get Started in Tree pane

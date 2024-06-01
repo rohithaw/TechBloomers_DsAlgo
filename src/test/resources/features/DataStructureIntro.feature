@@ -1,4 +1,4 @@
-@DSAlgo_DataStructure
+@DSALGO
 Feature: DataStructure-Introduction page feature
 
   Background: User checks Get Started in DS Pane
