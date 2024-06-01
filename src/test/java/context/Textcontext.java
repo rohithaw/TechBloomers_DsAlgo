@@ -49,7 +49,7 @@ public class Textcontext {
 			ChromeOptions co = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			
-			//co.addArguments("--headless");
+			co.addArguments("--headless");
 			co.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			driver = new ChromeDriver(co);
 			threadLocalDriver.set(driver);
