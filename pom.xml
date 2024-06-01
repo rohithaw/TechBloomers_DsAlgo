@@ -130,16 +130,16 @@
 				<version>3.2.5</version>
 				<configuration>
 					<includes>
-						<include>**/Runner.java</include>
+						<include>**/Runner1.java</include>
 					</includes>
 					<properties>
 						<parallel>methods</parallel>
 						<useUnlimitedThreads>true</useUnlimitedThreads>
 						<threadCount>5</threadCount>
 					</properties>
-					<suiteXmlFiles>
+				<!--	<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles>
+					</suiteXmlFiles> -->
 				</configuration>
 			</plugin>
 		</plugins>
