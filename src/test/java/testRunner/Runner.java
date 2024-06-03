@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 
  
  
-@CucumberOptions(tags = "", features = {"src/test/resources/features/Home.feature",}, 
+@CucumberOptions(tags = "", features = {"src/test/resources/features",}, 
         glue = { "StepDefinition","AppHooks" },
 		monochrome = false,
 		dryRun = false, plugin = { "pretty",
