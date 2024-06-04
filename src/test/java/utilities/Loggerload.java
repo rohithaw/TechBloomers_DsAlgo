@@ -1,14 +1,17 @@
 package utilities;
 
+
 import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import net.bytebuddy.implementation.FieldAccessor.PropertyConfigurable;
 
 import org.apache.logging.log4j.Logger;
 
 public class Loggerload {
 	
-	
-	
 	 private static Logger logger = LogManager.getLogger();
+
 
    	 public static void info(String message) {
 

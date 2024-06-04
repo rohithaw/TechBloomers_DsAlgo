@@ -26,7 +26,9 @@ Then It should display an error Please fill out this field. below Username textb
 
 @RP4
 Scenario Outline: Register with different input combinations.
-When user enters username password confirm-password and click Register with below status message
+When The user enters "<username>" , "<password>" , "<confirm-password>"
+And User clicks on Register button
+Then It should display a message: "<status>"
  
       | username   | password  | confirm-password | status                                                  |
       | hw9%j      | Bq6n34rt  | Bq6n34rt         | Please enter a valid username.                          |

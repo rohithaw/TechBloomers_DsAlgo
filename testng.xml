@@ -2,13 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="CrossBrowserTesting" parallel="methods" thread-count="5" >
   <test name= "ChromeTest">
-      <parameter name="browsertype" value="chrome"></parameter>
+      <parameter name="browser" value="chrome"></parameter>
       <classes>
       <class name="testRunner.Runner"></class>
       </classes>
   </test>
   <test name= "FirefoxTest">
-      <parameter name="browsertype" value="firefox"></parameter>
+      <parameter name="browser" value="firefox"></parameter>
+      <classes>
+      <class name="testRunner.Runner"></class>
+      </classes>
+  </test>
+<test name= "EdgeTest">
+      <parameter name="browser" value="edge"></parameter>
       <classes>
       <class name="testRunner.Runner"></class>
       </classes>

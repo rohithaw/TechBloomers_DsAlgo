@@ -26,7 +26,7 @@ public class Hooks {
 	}
 	
 	@Before
-	public void setUp1(){
+	public void setUp1() throws Throwable{
 		textContext.setDriver(driver);
 		driver = textContext.getDriver();
 		textContext.initializePageObjects(driver);		

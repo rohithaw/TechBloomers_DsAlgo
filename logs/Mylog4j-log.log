@@ -1,0 +1,507 @@
+[ERROR] 2024-06-03 14:47:52.510 [main] Loggerload - Error - You can not divide a number by zero
+[INFO ] 2024-06-03 14:47:52.512 [main] Loggerload - Info  - Addition of integers
+[WARN ] 2024-06-03 14:47:52.512 [main] Loggerload - Warning - Testing
+[INFO ] 2024-06-03 14:48:54.894 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:48:56.131 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:48:56.609 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:48:57.428 [main] Loggerload - User select Array from dropdown
+[INFO ] 2024-06-03 14:48:57.487 [main] Loggerload - User is navigated to Array from from dropdown
+[INFO ] 2024-06-03 14:49:03.875 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:49:05.143 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:49:06.774 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:49:07.581 [main] Loggerload - User Selects following link in Array PageArrays in Python
+[INFO ] 2024-06-03 14:49:07.675 [main] Loggerload - Arrays in Python
+[INFO ] 2024-06-03 14:49:07.676 [main] Loggerload - User is redirected to the Page
+[INFO ] 2024-06-03 14:49:16.022 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:49:24.610 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:49:25.901 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:49:27.756 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:49:28.771 [main] Loggerload - User Selects following link in Array PageArrays Using List
+[INFO ] 2024-06-03 14:49:28.844 [main] Loggerload - Arrays Using List
+[INFO ] 2024-06-03 14:49:28.844 [main] Loggerload - User is redirected to the Page
+[INFO ] 2024-06-03 14:49:33.589 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:49:41.672 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:49:42.940 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:49:44.687 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:49:45.512 [main] Loggerload - User Selects following link in Array PageBasic Operations in Lists
+[INFO ] 2024-06-03 14:49:45.582 [main] Loggerload - Basic Operations in Lists
+[INFO ] 2024-06-03 14:49:45.582 [main] Loggerload - User is redirected to the Page
+[INFO ] 2024-06-03 14:50:05.152 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:50:12.680 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:50:13.929 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:50:14.398 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:50:16.277 [main] Loggerload - User Selects following link in Array PageApplications of Array
+[INFO ] 2024-06-03 14:50:16.360 [main] Loggerload - Applications of Array
+[INFO ] 2024-06-03 14:50:16.360 [main] Loggerload - User is redirected to the Page
+[INFO ] 2024-06-03 14:50:32.844 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:50:42.125 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:50:43.273 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:50:44.341 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:50:46.652 [main] Loggerload - User Selects following link in Array PageArrays in Python
+[INFO ] 2024-06-03 14:51:09.679 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:51:22.310 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:51:24.749 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:51:25.344 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:51:25.819 [main] Loggerload - User Selects following link in Array PageArrays Using List
+[INFO ] 2024-06-03 14:51:38.275 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:51:49.626 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:51:50.936 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:51:51.606 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:51:53.338 [main] Loggerload - User Selects following link in Array PageBasic Operations in Lists
+[INFO ] 2024-06-03 14:52:10.264 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:52:23.135 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:52:24.293 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:52:24.842 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:52:26.371 [main] Loggerload - User Selects following link in Array PageApplications of Array
+[INFO ] 2024-06-03 14:52:43.547 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:52:55.500 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:52:56.661 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:52:57.769 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:52:59.533 [main] Loggerload - User Selects following link in Array PageArrays in Python
+[INFO ] 2024-06-03 14:53:09.781 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:53:14.199 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 14:53:20.448 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:53:21.727 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:53:22.394 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:53:22.990 [main] Loggerload - User Selects following link in Array PageArrays Using List
+[INFO ] 2024-06-03 14:53:30.852 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:53:35.077 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 14:53:40.490 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:53:41.593 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:53:43.222 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:53:43.903 [main] Loggerload - User Selects following link in Array PageBasic Operations in Lists
+[INFO ] 2024-06-03 14:53:53.860 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:53:57.900 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 14:54:05.032 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:54:06.267 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:54:06.861 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:54:07.266 [main] Loggerload - User Selects following link in Array PageApplications of Array
+[INFO ] 2024-06-03 14:54:14.084 [main] Loggerload - User clicks Try Here button
+[INFO ] 2024-06-03 14:54:17.890 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 14:54:23.705 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:54:24.993 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:54:25.598 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:54:40.260 [main] Loggerload - Expected result from Excel sheetname ArraypythonCode and 2 : Element Found
+[INFO ] 2024-06-03 14:54:43.681 [main] Loggerload - output is displayed: Element Found
+[INFO ] 2024-06-03 14:54:50.307 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:54:52.713 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:54:54.519 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:55:15.440 [main] Loggerload - Expected result from Excel sheetname ArraypythonCode and 3 : 2
+[INFO ] 2024-06-03 14:55:19.343 [main] Loggerload - output is displayed: 2
+[INFO ] 2024-06-03 14:55:25.847 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:55:27.083 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:55:28.136 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:55:47.962 [main] Loggerload - Expected result from Excel sheetname ArraypythonCode and 4 : 2
+[INFO ] 2024-06-03 14:55:52.413 [main] Loggerload - output is displayed: 2
+[INFO ] 2024-06-03 14:55:59.064 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:56:00.408 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:56:01.136 [main] Loggerload - User is in Arrays Module
+[INFO ] 2024-06-03 14:56:12.246 [main] Loggerload - Expected result from Excel sheetname ArraypythonCode and 5 : [4, 9, 9, 49, 121]
+[INFO ] 2024-06-03 14:56:16.903 [main] Loggerload - output is displayed: [4, 9, 9, 49, 121]
+[INFO ] 2024-06-03 14:56:24.941 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:56:26.128 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:56:27.488 [main] Loggerload - Data Structures-Introduction
+[INFO ] 2024-06-03 14:56:27.985 [main] Loggerload - Time Complexity
+[INFO ] 2024-06-03 14:56:33.604 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:56:36.088 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:56:36.783 [main] Loggerload - Data Structures-Introduction
+[INFO ] 2024-06-03 14:56:37.239 [main] Loggerload - Time Complexity
+[INFO ] 2024-06-03 14:56:52.957 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:56:54.169 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:56:55.915 [main] Loggerload - Data Structures-Introduction
+[INFO ] 2024-06-03 14:56:56.498 [main] Loggerload - Time Complexity
+[INFO ] 2024-06-03 14:57:19.213 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 14:57:25.243 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:57:26.399 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:57:27.219 [main] Loggerload - Data Structures-Introduction
+[INFO ] 2024-06-03 14:57:39.990 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:57:41.345 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:57:50.492 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:57:52.815 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:57:56.381 [main] Loggerload - Graph
+[INFO ] 2024-06-03 14:58:13.910 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:58:15.287 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:58:16.821 [main] Loggerload - Graph Representations
+[INFO ] 2024-06-03 14:58:27.879 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:58:29.101 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:58:32.682 [main] Loggerload - validcode entered into tryEditor : print("This is Graph in python")
+[INFO ] 2024-06-03 14:58:45.320 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:58:46.596 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:59:07.554 [main] Loggerload - validcode entered into tryEditor : print("This is Graph in python")
+[INFO ] 2024-06-03 14:59:18.636 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:59:19.948 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 14:59:33.200 [main] Loggerload - invalidcode entered into tryEditor : print('Hello, world!)
+[INFO ] 2024-06-03 14:59:36.971 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 14:59:44.579 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 14:59:45.744 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:00:02.795 [main] Loggerload - invalidcode entered into tryEditor : print('Hello, world!)
+[INFO ] 2024-06-03 15:00:06.892 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:00:10.787 [main] Loggerload - ******************* Launching Home Page******************
+[WARN ] 2024-06-03 15:00:21.428 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:00:26.804 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:00:32.682 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:00:37.143 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:00:43.290 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:00:50.382 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:00:56.093 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:01:04.938 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:01:11.183 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:01:16.102 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:01:20.877 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:01:25.748 [main] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 15:01:31.274 [main] Loggerload - ******************You have got a login failure warning*********************
+[INFO ] 2024-06-03 15:01:36.406 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:01:41.689 [main] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 15:01:46.805 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:01:48.065 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:01:58.248 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:01:59.524 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:02:01.832 [main] Loggerload - Introduction
+[INFO ] 2024-06-03 15:02:22.183 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:02:23.467 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:02:28.888 [main] Loggerload - Creating Linked LIst
+[INFO ] 2024-06-03 15:02:54.819 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:02:55.897 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:02:59.100 [main] Loggerload - Types of Linked List
+[INFO ] 2024-06-03 15:03:28.925 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:03:30.447 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:03:33.991 [main] Loggerload - Implement Linked List in Python
+[INFO ] 2024-06-03 15:04:09.021 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:04:10.307 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:04:18.401 [main] Loggerload - Traversal
+[INFO ] 2024-06-03 15:04:41.731 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:04:43.186 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:04:45.482 [main] Loggerload - Insertion
+[INFO ] 2024-06-03 15:05:09.020 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:05:11.979 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:05:13.774 [main] Loggerload - Deletion
+[INFO ] 2024-06-03 15:05:30.961 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:05:33.799 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:06:00.216 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:06:18.332 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:06:19.691 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:06:46.316 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:07:02.222 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:07:04.982 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:07:28.968 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:07:49.743 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:07:51.931 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:08:05.327 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:08:24.089 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:08:25.860 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:08:39.378 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:08:56.817 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:08:58.251 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:09:30.544 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:09:50.419 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:09:52.181 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:10:09.920 [main] Loggerload - The valid input is : print("This is Linkedlist in python")
+[INFO ] 2024-06-03 15:10:23.412 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:10:24.681 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:10:40.764 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:10:47.284 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:10:58.618 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:11:00.556 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:11:08.838 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:11:13.163 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:11:21.413 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:11:23.875 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:11:33.224 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:11:37.904 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:11:47.965 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:11:49.704 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:12:00.945 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:12:06.094 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:12:14.773 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:12:16.277 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:12:26.616 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:12:32.608 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:12:41.630 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:12:42.784 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:12:56.303 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:13:00.019 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:13:06.718 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:13:07.949 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:13:23.753 [main] Loggerload - The valid input is : print('Hello, world!)
+[INFO ] 2024-06-03 15:13:28.107 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:13:36.596 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:13:38.260 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:13:38.475 [main] Loggerload - Logged in message is displayed :You are logged in
+[INFO ] 2024-06-03 15:13:48.347 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:13:48.601 [main] Loggerload - **** Username entered ****
+[INFO ] 2024-06-03 15:13:48.602 [main] Loggerload - ***** Password entered ****
+[INFO ] 2024-06-03 15:13:49.420 [main] Loggerload - Actual message appeared on screen: Please fill out this field.
+[INFO ] 2024-06-03 15:13:57.165 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:13:57.548 [main] Loggerload - **** Username entered ****Selguru
+[INFO ] 2024-06-03 15:13:57.549 [main] Loggerload - ***** Password entered ****
+[INFO ] 2024-06-03 15:13:58.812 [main] Loggerload - Actual message appeared on screen: Please fill out this field.
+[INFO ] 2024-06-03 15:14:07.735 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:14:07.966 [main] Loggerload - **** Username entered ****
+[INFO ] 2024-06-03 15:14:07.966 [main] Loggerload - ***** Password entered ****Se123!@#
+[INFO ] 2024-06-03 15:14:09.226 [main] Loggerload - Actual message appeared on screen: Please fill out this field.
+[INFO ] 2024-06-03 15:14:18.704 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:14:19.045 [main] Loggerload - **** Username entered ****Selguru
+[INFO ] 2024-06-03 15:14:19.046 [main] Loggerload - ***** Password entered ****Se123!@#
+[INFO ] 2024-06-03 15:14:20.727 [main] Loggerload - User click on Login Button
+[INFO ] 2024-06-03 15:14:20.880 [main] Loggerload - Logged in message is displayed :You are logged in
+[INFO ] 2024-06-03 15:14:29.204 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:14:30.802 [main] Loggerload - **** Username entered ****Numpy4
+[INFO ] 2024-06-03 15:14:30.802 [main] Loggerload - ***** Password entered ****test
+[INFO ] 2024-06-03 15:14:32.226 [main] Loggerload - User click on Login Button
+[INFO ] 2024-06-03 15:14:32.362 [main] Loggerload - Logged in message is displayed :Invalid Username and Password
+[INFO ] 2024-06-03 15:14:44.619 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:14:45.158 [main] Loggerload - **** Username entered ****test
+[INFO ] 2024-06-03 15:14:45.158 [main] Loggerload - ***** Password entered ****Tester@4
+[INFO ] 2024-06-03 15:14:46.978 [main] Loggerload - User click on Login Button
+[INFO ] 2024-06-03 15:14:47.122 [main] Loggerload - Logged in message is displayed :Invalid Username and Password
+[INFO ] 2024-06-03 15:14:54.472 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:14:54.929 [main] Loggerload - **** Username entered ****test
+[INFO ] 2024-06-03 15:14:54.929 [main] Loggerload - ***** Password entered ****test
+[INFO ] 2024-06-03 15:14:56.035 [main] Loggerload - User click on Login Button
+[INFO ] 2024-06-03 15:14:56.173 [main] Loggerload - Logged in message is displayed :Invalid Username and Password
+[INFO ] 2024-06-03 15:15:02.693 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:15:04.100 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:15:18.777 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:15:20.526 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:15:23.953 [main] Loggerload - Implementation of Queue in Python
+[INFO ] 2024-06-03 15:15:52.072 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:15:53.974 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:15:59.035 [main] Loggerload - Implementation using collections.deque
+[INFO ] 2024-06-03 15:16:22.125 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:16:23.565 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:16:27.256 [main] Loggerload - Implementation using array
+[INFO ] 2024-06-03 15:16:49.779 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:16:51.024 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:16:54.541 [main] Loggerload - Queue Operations
+[INFO ] 2024-06-03 15:17:13.718 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:17:15.375 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:17:33.574 [main] Loggerload - The valid input is :print("This is Queue in python")
+[INFO ] 2024-06-03 15:17:51.181 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:17:52.909 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:18:06.946 [main] Loggerload - The valid input is :print("This is Queue in python")
+[INFO ] 2024-06-03 15:18:22.107 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:18:23.501 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:18:37.192 [main] Loggerload - The valid input is :print("This is Queue in python")
+[INFO ] 2024-06-03 15:18:55.427 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:18:57.030 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:19:09.696 [main] Loggerload - The valid input is :print("This is Queue in python")
+[INFO ] 2024-06-03 15:19:24.106 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:19:25.525 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:19:42.009 [main] Loggerload - The valid input is :print('Hello, world!)
+[INFO ] 2024-06-03 15:19:47.576 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:19:56.700 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:19:57.986 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:20:10.571 [main] Loggerload - The valid input is :print('Hello, world!)
+[INFO ] 2024-06-03 15:20:15.303 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:20:24.935 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:20:26.306 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:20:39.603 [main] Loggerload - The valid input is :print('Hello, world!)
+[INFO ] 2024-06-03 15:20:44.640 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:20:53.304 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:20:55.344 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:21:05.846 [main] Loggerload - The valid input is :print('Hello, world!)
+[INFO ] 2024-06-03 15:21:08.997 [main] Loggerload - The Error message displayed is :SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:21:17.876 [main] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 15:21:18.804 [main] Loggerload - User id:Pass:Confirm:
+[WARN ] 2024-06-03 15:21:18.923 [main] Loggerload - Warning mess is:Please fill out this field.
+[INFO ] 2024-06-03 15:21:27.647 [main] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 15:21:36.344 [main] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 15:21:46.968 [main] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 15:21:57.106 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:21:59.753 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:22:12.531 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:22:14.195 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:22:15.535 [main] Loggerload - Operations in Stack
+[INFO ] 2024-06-03 15:22:25.318 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:22:26.823 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:22:27.917 [main] Loggerload - Implementation
+[INFO ] 2024-06-03 15:22:46.736 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:22:48.751 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:22:50.674 [main] Loggerload - Applications
+[INFO ] 2024-06-03 15:23:11.634 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:23:13.139 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:23:18.549 [main] Loggerload - validcode entered into tryEditor : print("This is Stack in python")
+[INFO ] 2024-06-03 15:23:34.829 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:23:36.536 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:23:50.386 [main] Loggerload - validcode entered into tryEditor : print("This is Stack in python")
+[INFO ] 2024-06-03 15:24:04.662 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:24:05.992 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:24:22.745 [main] Loggerload - validcode entered into tryEditor : print("This is Stack in python")
+[INFO ] 2024-06-03 15:24:35.757 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:24:37.193 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:24:41.535 [main] Loggerload - invalidcode entered into tryEditor : print('Hello, world!)
+[INFO ] 2024-06-03 15:24:46.712 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:24:53.973 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:24:55.145 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:25:04.195 [main] Loggerload - invalidcode entered into tryEditor : print('Hello, world!)
+[INFO ] 2024-06-03 15:25:09.062 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:25:18.743 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:25:20.175 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:25:37.402 [main] Loggerload - invalidcode entered into tryEditor : print('Hello, world!)
+[INFO ] 2024-06-03 15:25:42.808 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:25:51.236 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:25:52.781 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:25:54.890 [main] Loggerload - Overview of Trees
+[INFO ] 2024-06-03 15:26:11.622 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:26:13.465 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:26:18.667 [main] Loggerload - Terminologies
+[INFO ] 2024-06-03 15:26:34.872 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:26:36.333 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:26:40.043 [main] Loggerload - Types of Trees
+[INFO ] 2024-06-03 15:27:07.984 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:27:09.663 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:27:11.671 [main] Loggerload - Tree Traversals
+[INFO ] 2024-06-03 15:27:31.365 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:27:32.800 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:27:38.393 [main] Loggerload - Traversals-Illustration
+[INFO ] 2024-06-03 15:27:57.243 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:27:58.409 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:28:01.646 [main] Loggerload - Binary Trees
+[INFO ] 2024-06-03 15:28:26.767 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:28:28.505 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:28:31.795 [main] Loggerload - Types of Binary Trees
+[INFO ] 2024-06-03 15:28:48.753 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:28:50.146 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:28:51.781 [main] Loggerload - Implementation in Python
+[INFO ] 2024-06-03 15:29:18.929 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:29:20.065 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:29:22.198 [main] Loggerload - Binary Tree Traversals
+[INFO ] 2024-06-03 15:29:41.145 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:29:42.779 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:29:45.660 [main] Loggerload - Implementation of Binary Trees
+[INFO ] 2024-06-03 15:29:59.789 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:30:01.604 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:30:03.985 [main] Loggerload - Applications of Binary trees
+[INFO ] 2024-06-03 15:30:21.090 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:30:22.571 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:30:25.746 [main] Loggerload - Binary Search Trees
+[INFO ] 2024-06-03 15:30:46.015 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:30:47.500 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:30:50.128 [main] Loggerload - Implementation Of BST
+[INFO ] 2024-06-03 15:31:04.375 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:31:05.554 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:31:12.190 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:31:23.889 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:31:25.382 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:31:34.001 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:31:48.897 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:31:50.944 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:32:00.341 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:32:15.527 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:32:17.584 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:32:28.682 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:32:43.935 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:32:45.314 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:32:58.549 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:33:16.097 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:33:17.770 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:33:33.397 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:33:48.972 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:33:50.631 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:34:02.359 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:34:18.079 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:34:19.431 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:34:29.490 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:34:47.604 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:34:48.924 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:35:02.575 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:35:15.353 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:35:17.241 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:35:34.018 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:35:47.067 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:35:48.479 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:36:00.306 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:36:19.367 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:36:21.372 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:36:30.955 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:36:46.654 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:36:48.033 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:36:53.995 [main] Loggerload - print("This is Tree in python")
+[INFO ] 2024-06-03 15:37:06.120 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:37:07.737 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:37:25.952 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:37:30.174 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:37:38.552 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:37:40.082 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:37:44.929 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:37:49.273 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:37:56.650 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:37:58.234 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:38:12.014 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:38:14.996 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:38:25.860 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:38:28.525 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:38:40.426 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:38:45.270 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:38:53.277 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:38:54.977 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:39:08.237 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:39:13.504 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:39:23.118 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:39:24.689 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:39:33.568 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:39:38.242 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:39:45.944 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:39:47.392 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:40:01.226 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:40:06.424 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:40:14.946 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:40:16.443 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:40:23.190 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:40:27.161 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:40:33.733 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:40:34.993 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:40:40.498 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:40:45.581 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:40:51.977 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:40:53.689 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:41:02.076 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:41:06.072 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:41:13.172 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:41:14.690 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:41:23.191 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:41:27.507 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:41:35.852 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:41:37.159 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:41:45.752 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:41:48.527 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:41:54.942 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:41:56.106 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 15:42:05.807 [main] Loggerload - print('Hello, world!)
+[INFO ] 2024-06-03 15:42:13.429 [main] Loggerload - SyntaxError: bad input on line 1
+[INFO ] 2024-06-03 15:42:25.532 [main] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 15:42:27.738 [main] Loggerload - ******* User Succesfully logs into DSAlgo Portal *******
+[INFO ] 2024-06-03 17:35:43.913 [TestNG-test=ChromeTest-1] Loggerload - ******************* Launching Home Page******************
+[WARN ] 2024-06-03 17:36:00.885 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:10.237 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:19.285 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:24.832 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:33.157 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:40.026 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:51.849 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:36:58.790 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:37:06.739 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:37:12.854 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:37:20.902 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:37:30.296 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:37:36.487 [TestNG-test=ChromeTest-1] Loggerload - ******************You have got a login failure warning*********************
+[INFO ] 2024-06-03 17:37:47.720 [TestNG-test=ChromeTest-1] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 17:37:56.865 [TestNG-test=ChromeTest-1] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 17:38:09.804 [TestNG-test=FirefoxTest-1] Loggerload - ******************* Launching Home Page******************
+[WARN ] 2024-06-03 17:38:25.530 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:38:39.741 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:38:46.671 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:38:58.888 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:39:09.604 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:39:22.205 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:39:35.652 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:39:50.646 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:40:03.817 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:40:21.318 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:40:31.839 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:40:43.165 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[WARN ] 2024-06-03 17:40:51.107 [TestNG-test=FirefoxTest-1] Loggerload - ******************You have got a login failure warning*********************
+[INFO ] 2024-06-03 17:41:02.166 [TestNG-test=FirefoxTest-1] Loggerload - *************Launching Signin Page*******************
+[INFO ] 2024-06-03 17:41:17.167 [TestNG-test=FirefoxTest-1] Loggerload - *************Launching Register Page*******************
+[INFO ] 2024-06-03 17:53:37.576 [TestNG-test=ChromeTest-1] Loggerload - ******************* Launching Home Page******************
+[INFO ] 2024-06-03 17:53:49.207 [TestNG-test=FirefoxTest-1] Loggerload - ******************* Launching Home Page******************

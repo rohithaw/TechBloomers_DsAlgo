@@ -106,7 +106,7 @@ public class GraphSteps {
 	@Then("The user should be presented with Run result in Graph Page")
 	public void the_user_should_be_presented_with_run_result_in_graph_page() {
 	    gp.outputdisplay.getText();
-	    assertEquals(gp.outputdisplay.getText(),"This is Graph");
+	    assertEquals(gp.outputdisplay.getText(),"This is Graph in python");
 	}
 
 	@When("User enters a invalid python code in tryEditor from sheet {string} and {int} in Graph Page")
