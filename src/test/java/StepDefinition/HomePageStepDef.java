@@ -2,21 +2,14 @@ package StepDefinition;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 import java.util.List;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-
-import Driver.Driver_Factory;
 import context.Textcontext;
 import io.cucumber.java.en.*;
 import pageObjects.DsAlgoHomePage;
 import pageObjects.DsAlgoLoginPage;
 import utilities.CommonMethods;
-import utilities.ConfigReader;
 import utilities.Loggerload;
 import utilities.PropertiesFile;
 

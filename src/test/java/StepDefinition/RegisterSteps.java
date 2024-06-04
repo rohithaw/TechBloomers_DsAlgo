@@ -1,13 +1,13 @@
 package StepDefinition;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-
-import Driver.Driver_Factory;
 import context.Textcontext;
 import io.cucumber.java.en.*;
 import pageObjects.DsAlgoHomePage;
@@ -108,6 +108,26 @@ public class RegisterSteps {
 			 
 		 }
 	}
+	
+
+	
+	@When("The user enters {string} , {string} , {string}")
+	public void the_user_enters(String uname, String pwd, String confirmpwd) {
+	    
+		rp.username_Register.sendKeys(uname);
+		rp.password_Register.sendKeys(pwd);
+		rp.confirmPassword_Register.sendKeys(confirmpwd);
+	}
+
+	@Then("It should display a message: {string}")
+	public void it_should_display_a_message(String ExpectedMsg) {
+	   
+		String errorMessage =  rp.errorMessage_Register.getText();
+		System.out.println(errorMessage);
+		assertEquals(ExpectedMsg, errorMessage);
+		
+	}
+
 	
 
 }

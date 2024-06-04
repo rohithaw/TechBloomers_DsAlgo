@@ -6,20 +6,20 @@ import io.cucumber.junit.CucumberOptions;
 
 	
 @RunWith(Cucumber.class) //Junit execution
-@CucumberOptions(
-		monochrome = false, //console output formatting
-		tags = "@DSAlgo", //tags from feature file
-		features = {"src/test/resources/features/Home.feature"}, //location of feature files
-		glue = {"StepDefinition", "AppHooks"}, //location of step definition files
-				plugin = {"pretty","html:target/Cucumber-Reports/Team19-SeleniumSurfers.html", //For the Detailed output and generating reports.
+
+	@CucumberOptions(
+			monochrome = false,  //console output formatting
+			tags = "@DSALGO", //tags from feature file
+			features = {"src/test/resources/features"}, //location of feature files
+			glue= {"StepDefinition","AppHooks"}, //location of step definition files
+			plugin = {"pretty", //For the Detailed output and generating reports.
+						"html:target/Cucumber-Reports/TechBloomers.html" , 
+						"json:target/Cucumber-Reports/TechBloomers.json" , 
+						"junit:target/Cucumber-Reports/TechBloomers.xml",
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 						"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
-						"json:target/Cucumber-Reports/Team19-SeleniumSurfers.json" ,
-						"junit:target/Cucumber-Reports/Team19-SeleniumSurfers.xml",},
-		dryRun=false
+			"rerun:target/failed_scenarios.txt"})
 		
-		
-		)
 	public class Runner1 {
 
 	}

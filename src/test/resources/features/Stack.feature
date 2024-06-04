@@ -1,3 +1,4 @@
+@DSALGO
 Feature: Stack Feature
 
   Background: User is Signed-in and navigates to Stack Page

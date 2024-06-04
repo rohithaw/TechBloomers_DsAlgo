@@ -19,7 +19,9 @@ import pageObjects.DsAlgoQueuePage;
 import pageObjects.DsAlgoRegisterPage;
 import pageObjects.DsAlgoStackPage;
 import pageObjects.DsAlgoTreePage;
+import utilities.Loggerload;
 import utilities.PropertiesFile;
+import utilities.TestNgConfigReader;
 
 import java.time.Duration;
 
@@ -38,18 +40,22 @@ public class Textcontext {
 	DsAlgoQueuePage qp;
 	DsAlgoStackPage sp;
 	DsAlgoTreePage tp;
+
 	
 	
-	
-	public void setDriver(WebDriver driver) {
+	public void setDriver(WebDriver driver) throws Throwable {
 		String browser = PropertiesFile.readPropertiesFile("browser");
+		
+		// Uncomment for cross Browser testing
+		//String browser = TestNgConfigReader.getBrowserType();
+		//
 		System.out.println("The browser value from properties file is: "+ browser);
 		
 		if (browser.equalsIgnoreCase("Chrome")){
 			ChromeOptions co = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			
-			//co.addArguments("--headless");
+			co.addArguments("--headless");
 			co.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 			driver = new ChromeDriver(co);
 			threadLocalDriver.set(driver);
