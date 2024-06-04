@@ -29,7 +29,8 @@ Scenario Outline: Register with different input combinations.
 When The user enters "<username>" , "<password>" , "<confirm-password>"
 And User clicks on Register button
 Then It should display a message: "<status>"
- 
+
+ Examples:
       | username   | password  | confirm-password | status                                                  |
       | hw9%j      | Bq6n34rt  | Bq6n34rt         | Please enter a valid username.                          |
       | Rohitha    | Bq6n34@.+ | dummy.@          | password_mismatch:The two password fields didn’t match. |
