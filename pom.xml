@@ -144,9 +144,9 @@
 						<useUnlimitedThreads>true</useUnlimitedThreads>
 						<threadCount>5</threadCount>
 					</properties>
-					<suiteXmlFiles>
+					<!--<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
-					</suiteXmlFiles> 
+					</suiteXmlFiles> -->
 				</configuration>
 			</plugin>
 		</plugins>
