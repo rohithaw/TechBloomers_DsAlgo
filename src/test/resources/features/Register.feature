@@ -37,6 +37,6 @@ Then It should display a message: "<status>"
       | Rohitha    | Bq6n      | Bq6n             | Password must contain at least eight characters.        |
       | Rohitha    | Rohitha   | Rohitha          | Password can not be too similar to your username.       |
       | Rohitha    |  12345678 | 12345678         | Password can not be entirely numeric.                   |
-      | ninja2027  | Tech@2025 | Tech@2025        | New Account Created. You are logged in as username.     |
+      | ninja2040  | Tech@2025 | Tech@2025        | New Account Created. You are logged in as ninja2040.     |
       
  
