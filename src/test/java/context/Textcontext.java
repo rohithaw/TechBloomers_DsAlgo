@@ -44,10 +44,10 @@ public class Textcontext {
 	
 	
 	public void setDriver(WebDriver driver) throws Throwable {
-		//String browser = PropertiesFile.readPropertiesFile("browser");
+		String browser = PropertiesFile.readPropertiesFile("browser");
 		
 		// Uncomment for cross Browser testing
-		String browser = TestNgConfigReader.getBrowserType();
+		//String browser = TestNgConfigReader.getBrowserType();
 		//
 		System.out.println("The browser value from properties file is: "+ browser);
 		

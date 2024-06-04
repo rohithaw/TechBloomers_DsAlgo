@@ -10,7 +10,7 @@ import utilities.TestNgConfigReader;
 
  
  
-@CucumberOptions(tags = "", features = {"src/test/resources/features/Home.feature",}, 
+@CucumberOptions(tags = "", features = {"src/test/resources/features",}, 
         glue = { "StepDefinition","AppHooks" },
 		monochrome = false,
 		dryRun = false,
@@ -32,16 +32,16 @@ public class Runner extends AbstractTestNGCucumberTests {
 		return super.scenarios();
 	}
 	
-	@BeforeTest
-
-	@Parameters({"browser"})
-
-	public void defineBrowser(String browser) throws Throwable {
-
-		TestNgConfigReader.setBrowserType(browser);
-
-
-}
+//	@BeforeTest
+//
+//	@Parameters({"browser"})
+//
+//	public void defineBrowser(String browser) throws Throwable {
+//
+//		TestNgConfigReader.setBrowserType(browser);
+//
+//
+//}
 }
 
 
