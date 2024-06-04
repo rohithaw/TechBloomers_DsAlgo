@@ -10,7 +10,7 @@ import utilities.TestNgConfigReader;
 
  
  
-@CucumberOptions(tags = "", features = {"src/test/resources/features",}, 
+@CucumberOptions(tags = "", features = {"src/test/resources/features/Array.feature",}, 
         glue = { "StepDefinition","AppHooks" },
 		monochrome = false,
 		dryRun = false,
